@@ -1,0 +1,113 @@
+/* фон страницы */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./bg.jpeg');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* контейнер */
+div {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* заголовок */
+h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* список */
+ul {
+  padding: 0;
+}
+
+/* элемент списка */
+li {
+  list-style: none;
+  background: #f1f5f9;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #e2e8f0;
+}
+
+/* ссылки */
+a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #2563eb;
+}
+
+/* кнопки */
+button {
+  padding: 6px 12px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #dc2626;
+}
+
+/* кнопка добавления */
+a[href="/add"] {
+  display: inline-block;
+  margin-top: 20px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+a[href="/add"]:hover {
+  background: #1d4ed8;
+}
+
+/* инпуты */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+}
+
+/* кнопка формы */
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #22c55e;
+}
+
+form button:hover {
+  background: #16a34a;
+}
