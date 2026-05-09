@@ -60,7 +60,7 @@ const Form = () => {
     setLoading(true);
     setError('');
 
-    axios.post('http://localhost:5000/incidents', {
+    axios.post('http://localhost:4000/api/incidents', {
       title,
       description,
       location,
@@ -68,9 +68,11 @@ const Form = () => {
       status,
       responsible
     })
-      .then(() => navigate('/'))
+      .then(() => {
+        navigate('/');
+      })
       .catch(() => {
-        setError('Не удалось добавить инцидент. Проверьте работу сервера.');
+        setError('Не удалось добавить инцидент или отправить лог по FTPS. Проверьте backend, json-server и FTPS-сервер.');
       })
       .finally(() => {
         setLoading(false);
